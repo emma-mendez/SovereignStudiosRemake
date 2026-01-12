@@ -65,7 +65,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="bg-primary text-primary-foreground px-8 py-4 rounded-md text-base font-medium tracking-wide hover:bg-copper-dark transition-all duration-300 shadow-copper hover:shadow-elevated"
             >
-              Book <br/> Venue Hires/Events
+              Book <br/> Dance/Venue/Event
             </a>
             <a
             href="https://www.sovereignwellnesslounge.co.uk/"
