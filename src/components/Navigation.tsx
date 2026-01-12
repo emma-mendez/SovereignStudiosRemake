@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import logo from "@/assets/sovereignstudios-logo.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -82,9 +83,8 @@ const Navigation = () => {
         isScrolled || !isHomePage ? "bg-background/95 backdrop-blur-md shadow-soft" : "bg-transparent"      }`}
     >
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <Link to="/" className="font-display text-2xl font-semibold tracking-wide">
-          <span className={textColor}>Sovereign</span>
-          <span className="text-primary"> Studios</span>
+        <Link to="/">
+          <img src={logo} alt="Sovereign Studios" className="h-12 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -161,22 +161,67 @@ const Navigation = () => {
           exit={{ opacity: 0, height: 0 }}
           className="md:hidden bg-background border-t border-border"
         >
-          <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
-            {navItems.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="text-foreground font-medium py-2 hover:text-primary transition-colors"
-              >
-                {link.name}
-              </a>
+          <div className="container mx-auto px-6 py-4 flex flex-col gap-2">
+            {navItems.map((item) => (
+              <div key={item.name}>
+                {item.subItems ? (
+                  <>
+                    <div className="flex items-center justify-between">
+                      <Link
+                        to={item.href}
+                        onClick={(e) => {
+                          if (item.scrollAction) {
+                            e.preventDefault();
+                            item.scrollAction();
+                          }
+                          setIsMobileMenuOpen(false);
+                          setOpenDropdown(null);
+                        }}
+                        className="text-foreground font-medium py-2 hover:text-primary transition-colors flex-1"
+                      >
+                        {item.name}
+                      </Link>
+                      <button
+                        onClick={() => handleDropdownToggle(item.name)}
+                        className="p-2 text-foreground hover:text-primary transition-colors"
+                      >
+                        <ChevronDown size={16} className={`transition-transform ${openDropdown === item.name ? "rotate-180" : ""}`} />
+                      </button>
+                    </div>
+                    {openDropdown === item.name && (
+                      <div className="pl-4 border-l-2 border-primary/30 ml-2 bg-background">
+                        {item.subItems.map((subItem) => (
+                          <Link
+                            key={subItem.name}
+                            to={subItem.href}
+                            onClick={() => {
+                              setIsMobileMenuOpen(false);
+                              setOpenDropdown(null);
+                            }}
+                            className="block text-muted-foreground py-2 hover:text-primary transition-colors"
+                          >
+                            {subItem.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <Link
+                    to={item.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="block text-foreground font-medium py-2 hover:text-primary transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                )}
+              </div>
             ))}
             <a
               href="https://venue.appointedd.com/booking-widget/66b7ca766c4aed54088d97f6"
               target="_blank"
               rel="noopener noreferrer"
-              className={`md:hidden ${textColor}`}            
+              className="bg-primary text-primary-foreground px-6 py-3 rounded-md text-center font-medium hover:bg-copper-dark transition-colors mt-2"
             >
               Book Now
             </a>

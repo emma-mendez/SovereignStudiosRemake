@@ -45,7 +45,10 @@
     --cream: 40 33% 98%;
     --cream-dark: 40 25% 92%;
     --warm-white: 40 50% 99%;
-
+    --cyan: 185 70% 45%;
+    --cyan-light: 185 70% 60%;
+    --cyan-dark: 185 70% 30%; 
+  
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(0 0% 10% / 0.85), hsl(0 0% 10% / 0.6));
     --gradient-copper: linear-gradient(135deg, hsl(30 45% 59%), hsl(30 50% 45%));
