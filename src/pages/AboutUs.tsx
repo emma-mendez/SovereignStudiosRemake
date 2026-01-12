@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import aboutImage from "@/assets/about-placeholder.jpg";
+import BackToHome from "@/components/BackToHome";
+
 
 const AboutUs = () => {
   return (
@@ -16,6 +18,7 @@ const AboutUs = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
+            <BackToHome />
             <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-8">
               About <span className="text-primary">Us</span>
             </h1>

@@ -7,7 +7,7 @@ const stats = [
   { icon: Users, number: "102", label: "Standing Capacity", sublabel: "55 seated" },
   { icon: Users, number: "25", label: "Dance Capacity", sublabel: "persons max" },
   { icon: Clock, number: "24/7", label: "Self Access", sublabel: "on demand" },
-  { icon: Star, number: "4.7", label: "Google Rating", sublabel: "17+ reviews" },
+  { icon: Star, number: "4.7", label: "Google Rating", sublabel: "19+ reviews" },
 ];
 
 const About = () => {

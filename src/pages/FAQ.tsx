@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import BackToHome from "@/components/BackToHome";
 
 const faqItems = [
   {
@@ -63,6 +64,7 @@ const FAQ = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
+            <BackToHome />
             <span className="text-primary text-sm tracking-[0.2em] uppercase">Questions</span>
             <h1 className="font-display text-4xl md:text-5xl text-foreground mt-4">
               Frequently Asked Questions

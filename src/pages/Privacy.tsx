@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import BackToHome from "@/components/BackToHome";
 
 const Privacy = () => {
   return (
@@ -15,6 +16,7 @@ const Privacy = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
+            <BackToHome />
             <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-8">
               Privacy <span className="text-primary">Policy</span>
             </h1>

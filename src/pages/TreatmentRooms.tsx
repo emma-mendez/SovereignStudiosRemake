@@ -7,6 +7,7 @@ import img2 from "@/assets/room-lounge.jpg";
 import img3 from "@/assets/mainImage4.jpg";
 import img4 from "@/assets/mainImage5.jpg";
 import img6 from "@/assets/treatmentroom1.mp4";
+import BackToHome from "@/components/BackToHome";
 
 type MediaItem = {
   type: "image" | "video";
@@ -33,6 +34,7 @@ const TreatmentRooms = () => {
             transition={{ duration: 0.6 }}
             className="max-w-5xl mx-auto"
           >
+            <BackToHome />
             <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
               Treatment <span className="text-primary">Rooms</span>
             </h1>

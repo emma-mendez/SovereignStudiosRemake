@@ -7,6 +7,7 @@ import img2 from "@/assets/events1.jpg";
 import img3 from "@/assets/mainEvent6.jpg";
 import img4 from "@/assets/mainImage5.jpg";
 import img6 from "@/assets/eventClip2.mp4";
+import BackToHome from "@/components/BackToHome";
 
 type MediaType = "image" | "video";
 
@@ -38,6 +39,7 @@ const EventsHire = () => {
             transition={{ duration: 0.6 }}
             className="max-w-5xl mx-auto"
           >
+            <BackToHome />
             <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
               Events <span className="text-primary">Hire</span>
             </h1>

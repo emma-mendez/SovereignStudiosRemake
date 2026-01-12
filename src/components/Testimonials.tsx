@@ -93,7 +93,7 @@ const Testimonials = () => {
             <div className="h-8 w-px bg-border" />
             <div>
               <p className="font-medium text-foreground">Google Reviews</p>
-              <p className="text-sm text-muted-foreground">17+ verified reviews</p>
+              <p className="text-sm text-muted-foreground">19+ verified reviews</p>
             </div>
           </div>
         </motion.div>

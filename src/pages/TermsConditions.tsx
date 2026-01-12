@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
+import BackToHome from "@/components/BackToHome";
 
 const TermsConditions = () => {
   return (
@@ -15,6 +16,7 @@ const TermsConditions = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
+            <BackToHome />
             <span className="text-primary text-sm tracking-[0.2em] uppercase">Legal</span>
             <h1 className="font-display text-4xl md:text-5xl text-foreground mt-4">
               Terms & Conditions

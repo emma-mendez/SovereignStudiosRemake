@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
+import BackToHome from "@/components/BackToHome";
 
 const ContactPage = () => {
   return (
@@ -16,6 +17,7 @@ const ContactPage = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-8"
           >
+            <BackToHome />
             <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
               Get In <span className="text-primary">Touch</span>
             </h1>
