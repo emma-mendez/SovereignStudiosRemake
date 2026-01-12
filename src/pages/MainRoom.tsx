@@ -10,6 +10,11 @@ import img6 from "@/assets/mainVideo5.mp4";
 
 // import img5 from "@/assets/mainImage6.jpg";
 
+interface MediaItem {
+  type: "image" | "video";
+  src: string;
+}
+
 const MainRoom = () => {
 const media: MediaItem[] = [
   { type: "video", src: img6 },

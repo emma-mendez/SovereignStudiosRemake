@@ -8,12 +8,18 @@ import img3 from "@/assets/mainImage4.jpg";
 import img4 from "@/assets/mainImage5.jpg";
 import img6 from "@/assets/treatmentroom1.mp4";
 
+type MediaItem = {
+  type: "image" | "video";
+  src: string;
+  alt?: string;
+};
+
 const TreatmentRooms = () => {
   const media: MediaItem[] = [
-  { type: "video", src: img6 },
-  { type: "image", src: img1 },
-  { type: "image", src: img2 },
-];
+    { type: "video", src: img6 },
+    { type: "image", src: img1 },
+    { type: "image", src: img2 },
+  ];
 
   return (
     <main className="overflow-hidden">

@@ -9,6 +9,7 @@ import img4 from "@/assets/mainImage5.jpg";
 import img6 from "@/assets/mainVidDance.mp4";
 
 const DanceSpace = () => {
+type MediaItem = { type: "video" | "image"; src: string };
 const media: MediaItem[] = [
   { type: "video", src: img6 },
   { type: "image", src: img1 },
