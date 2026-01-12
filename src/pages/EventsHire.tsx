@@ -77,7 +77,7 @@ const EventsHire = () => {
                 rel="noopener noreferrer"
                 className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-md text-base font-medium tracking-wide hover:bg-copper-dark transition-colors shadow-copper"
               >
-                Enquire About Hire
+                Pay Deposit/Full
               </a>
             </div>
             
