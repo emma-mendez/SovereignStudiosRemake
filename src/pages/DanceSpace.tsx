@@ -40,8 +40,8 @@ const media: MediaItem[] = [
               A dedicated space for dance classes, rehearsals, and performances
             </p>
             
-            <SpaceCarousel media={media} spaceName="Main Room" />
-            
+            <SpaceCarousel media={media} spaceName="Dance Space" />
+                        
             <div className="mt-12 grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
                 <h2 className="font-display text-2xl font-semibold text-foreground">Features</h2>
