@@ -6,15 +6,18 @@ import img1 from "@/assets/dance2square.png";
 import img2 from "@/assets/group2.png";
 import img3 from "@/assets/mainImage4.jpg";
 import img4 from "@/assets/mainImage5.jpg";
+import img5 from "@/assets/chynaDance.mp4";
 import img6 from "@/assets/mainVidDance.mp4";
+import img7 from "@/assets/anthiaDance.mp4";
 import BackToHome from "@/components/BackToHome";
 
 const DanceSpace = () => {
 type MediaItem = { type: "video" | "image"; src: string };
 const media: MediaItem[] = [
   { type: "video", src: img6 },
-  { type: "image", src: img1 },
+  { type: "video", src: img5 },
   { type: "image", src: img2 },
+  { type: "video", src: img7 },
 ];
 
   return (
