@@ -98,7 +98,7 @@ const About = () => {
                 <div className="mt-6 pt-6 border-t border-border">
                   <p className="text-sm text-muted-foreground mb-2">Event Hire Flat Rate</p>
                   <p className="font-display text-2xl text-foreground">£275</p>
-                  <p className="text-xs text-muted-foreground">10hrs (2pm - midnight)</p>
+                  <p className="text-xs text-muted-foreground">(2pm - close)</p>
                 </div>
               </div>
             </div>
