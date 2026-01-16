@@ -7,7 +7,7 @@ const stats = [
   { icon: Users, number: "102", label: "Standing Capacity", sublabel: "55 seated" },
   { icon: Users, number: "25", label: "Dance Capacity", sublabel: "persons max" },
   { icon: Clock, number: "24/7", label: "Self Access", sublabel: "on demand" },
-  { icon: Star, number: "4.7", label: "Google Rating", sublabel: "19+ reviews" },
+  { icon: Star, number: "4.7", label: "Google Rating", sublabel: "19+ reviews", link: "https://share.google/Zq9i5QqU0ZGCJ8WuI" },
 ];
 
 const About = () => {
@@ -39,23 +39,42 @@ const About = () => {
 
         {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
-          {stats.map((stat, index) => (
-            <motion.div
-              key={stat.label}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-card rounded-xl p-6 text-center shadow-soft hover:shadow-elevated transition-shadow"
-            >
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mb-4">
-                <stat.icon className="w-6 h-6 text-primary" />
-              </div>
-              <p className="font-display text-3xl md:text-4xl text-foreground mb-1">{stat.number}</p>
-              <p className="text-sm font-medium text-foreground">{stat.label}</p>
-              <p className="text-xs text-muted-foreground">{stat.sublabel}</p>
-            </motion.div>
-          ))}
+          {stats.map((stat, index) => {
+            const content = (
+              <>
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mb-4">
+                  <stat.icon className="w-6 h-6 text-primary" />
+                </div>
+                <p className="font-display text-3xl md:text-4xl text-foreground mb-1">{stat.number}</p>
+                <p className="text-sm font-medium text-foreground">{stat.label}</p>
+                <p className="text-xs text-muted-foreground">{stat.sublabel}</p>
+              </>
+            );
+
+            return (
+              <motion.div
+                key={stat.label}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-card rounded-xl p-6 text-center shadow-soft hover:shadow-elevated transition-shadow"
+              >
+                {stat.link ? (
+                  <a 
+                    href={stat.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    {content}
+                  </a>
+                ) : (
+                  content
+                )}
+              </motion.div>
+            );
+          })}
         </div>
 
         {/* Features */}

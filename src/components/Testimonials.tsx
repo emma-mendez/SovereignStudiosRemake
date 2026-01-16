@@ -81,8 +81,12 @@ const Testimonials = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="flex justify-center mt-12"
         >
-          <div className="bg-card rounded-xl px-8 py-4 shadow-soft inline-flex items-center gap-4">
-            <div className="text-center">
+          <a 
+            href="https://share.google/Zq9i5QqU0ZGCJ8WuI"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-card rounded-xl px-8 py-4 shadow-soft inline-flex items-center gap-4 hover:shadow-elevated transition-shadow cursor-pointer"
+          >            <div className="text-center">
               <p className="font-display text-2xl text-foreground">4.7</p>
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
@@ -95,7 +99,7 @@ const Testimonials = () => {
               <p className="font-medium text-foreground">Google Reviews</p>
               <p className="text-sm text-muted-foreground">19+ verified reviews</p>
             </div>
-          </div>
+          </a>
         </motion.div>
       </div>
     </section>
