@@ -1,4 +1,17 @@
 {
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "bookings.sovereignstudios.co.uk"
+        }
+      ],
+      "destination": "https://venue.appointedd.com/booking-widget/66b7ca766c4aed54088d97f6",
+      "permanent": false
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
@@ -6,5 +19,3 @@
     }
   ]
 }
-
-
