@@ -4,14 +4,7 @@
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ],
-  
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "https://venue.appointedd.com/booking-widget/66b7ca766c4aed54088d97f6",
-      "permanent": false
-    }
   ]
 }
+
 
