@@ -17,7 +17,7 @@ const TermsConditions = () => {
             className="text-center mb-12"
           >
             <BackToHome />
-            <span className="text-primary text-sm tracking-[0.2em] uppercase">Legal</span>
+            {/* <span className="text-primary text-sm tracking-[0.2em] uppercase">Legal</span> */}
             <h1 className="font-display text-4xl md:text-5xl text-foreground mt-4">
               Terms & Conditions
             </h1>
@@ -33,7 +33,7 @@ const TermsConditions = () => {
             <div className="bg-background rounded-2xl p-8 shadow-soft mb-8">
               <h2 className="font-display text-2xl text-primary mb-2">Hire Types</h2>
               <p className="text-muted-foreground text-sm mb-6">At a Glance - Sovereign Studios Venue Hire</p>
-              <p className="text-xs text-muted-foreground mb-6">Last Updated: 28th July 2025</p>
+              <p className="text-xs text-muted-foreground mb-6">Last Updated: 20th Jan 2026</p>
               
               <p className="text-foreground mb-6">These are the key points to ensure a smooth and responsible use of the venue.</p>
               
@@ -41,10 +41,12 @@ const TermsConditions = () => {
                 <div className="bg-muted/50 rounded-lg p-4 text-center">
                   <p className="font-semibold text-foreground">General Hire</p>
                   <p className="text-primary text-lg font-medium">£12.50ph</p>
+                  <p className="text-xs text-muted-foreground">(Rehearsals, Classes, Small Groups &amp; Low-Footfall Uses)</p>
                 </div>
                 <div className="bg-muted/50 rounded-lg p-4 text-center">
                   <p className="font-semibold text-foreground">Dance Hire</p>
                   <p className="text-primary text-lg font-medium">£12.50ph</p>
+                  <p className="text-xs text-muted-foreground">(2hrs min required)</p>
                 </div>
                 <div className="bg-muted/50 rounded-lg p-4 text-center">
                   <p className="font-semibold text-foreground">Event Hire</p>
