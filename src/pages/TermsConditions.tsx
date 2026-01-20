@@ -46,7 +46,7 @@ const TermsConditions = () => {
                 <div className="bg-muted/50 rounded-lg p-4 text-center">
                   <p className="font-semibold text-foreground">Dance Hire</p>
                   <p className="text-primary text-lg font-medium">£12.50ph</p>
-                  <p className="text-xs text-muted-foreground">(2hrs min required)</p>
+                  <p className="text-xs text-muted-foreground">(2hrs Min Required)</p>
                 </div>
                 <div className="bg-muted/50 rounded-lg p-4 text-center">
                   <p className="font-semibold text-foreground">Event Hire</p>
